@@ -108,9 +108,11 @@ function setView(viewName, viewData) {
       renderInstalledApps();
       break;
     case "GetApps":
+      if (viewData !== undefined) {
+        currentSelection.category = viewData;
+      }
       nonInstalledViews.style.display = "block";
       getApps.style.display = "flex";
-      currentSelection.category = viewData;
       tabGetApps.className = "tab active";
       renderGetApps();
       break;
