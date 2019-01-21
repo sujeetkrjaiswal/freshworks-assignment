@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Freshworks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <base href="./" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <button
+          class="tab"
+          id="tabInstalledApp"
+          onclick="setView('InstalledApps')"
+        >
+          Apps
+        </button>
+        <button class="tab" id="tabGetApps" onclick="setView('GetApps', null)">
+          Get Apps
+        </button>
+      </header>
+      <section id="installedApps"></section>
+      <div id="nonInstalledViews">
+        <section id="getApps">
+          <button class="backBtn" onclick="back()">X</button>
+          <div id="appsCategory"></div>
+          <div class="apps-list-container">
+            <h2 id="getAppsHeading"></h2>
+            <div id="getAppsList"></div>
+          </div>
+        </section>
+        <section id="appsDetails">
+          <button class="backBtn" onclick="back()">◀ back</button>
+          <div class="detail-img-container">
+            <img id="appImage" /> <button onclick="install()">Install</button>
+          </div>
+          <div class="width-1-1">
+            <h3 id="appName"></h3>
+            <h4>Description</h4>
+            <p id="appDescription"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

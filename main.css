@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+button {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.width-1-1 {
+  flex: 1 1 auto;
+}
+
+#nonInstalledViews,
+#getApps,
+#appsDetails {
+  display: none;
+  background: #ffffff;
+  min-height: 100%;
+}
+
+#nonInstalledViews {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  padding-top: 64px;
+  padding-left: 20%;
+  overflow: auto;
+}
+
+.tab {
+  border: 0;
+  background: transparent;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 8px;
+}
+
+.tab.active {
+  border-bottom-color: #00adff;
+}
+
+/* Installed Apps Section */
+.app-item-installed {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+/* Get Apps */
+.backBtn {
+  align-self: flex-start;
+  border: none;
+  /* background: transparent; */
+  font-size: 1.25rem;
+  padding: 8px;
+}
+#appsCategory {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-right: 1px solid #aaa;
+  min-width: 200px;
+}
+#appsCategory .tab {
+  border-bottom: none;
+  border-left: 2px solid transparent;
+  text-align: left;
+}
+#appsCategory .tab.active {
+  border-left-color: #00adff;
+}
+.apps-list-container {
+  padding: 0 16px 32px;
+  flex: 1 1 auto;
+}
+
+#getAppsHeading {
+  text-align: center;
+  margin-top: 0;
+  font-weight: lighter;
+}
+.apps-item-get-apps {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app-item-get-apps {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+}
+/* Apps Details */
+.detail-img-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
